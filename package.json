@@ -2,7 +2,7 @@
   "name": "resx-designer-generator",
   "displayName": "Resx Designer Generator",
   "description": "Create a designer class for your resource files",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "AnndreJunior",
   "engines": {
     "vscode": "^1.91.0"
