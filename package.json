@@ -3,6 +3,7 @@
   "displayName": "Resx Designer Generator",
   "description": "Create a designer class for your resource files",
   "version": "0.0.1",
+  "publisher": "AnndreJunior",
   "engines": {
     "vscode": "^1.91.0"
   },
