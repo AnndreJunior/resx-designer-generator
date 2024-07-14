@@ -7,8 +7,11 @@ export function generateNamespace(folderPath: string): string {
   if (!vscode.workspace.workspaceFolders) {
     throw new NoWorkspaceOpenError("Workspace not found");
   }
+  const excludedDirectories = ['src', 'test', 'tests']
   const rootPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
   const relativePath = path.relative(rootPath, folderPath);
-  const namespace = relativePath.split(path.sep).join(".");
+  const parts = relativePath.split(path.sep);
+  const filteredParts = parts.filter((part) => !excludedDirectories.includes(part))
+  const namespace = filteredParts.join(".");
   return namespace;
 }

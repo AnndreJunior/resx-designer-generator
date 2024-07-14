@@ -2,7 +2,7 @@ import * as vscode from "vscode";
 import path from "path";
 import { getAccessModifier } from "./utils/get-access-modifier";
 import { ErrorBase } from "./errors/error-base";
-import { createDesignerClass } from "./utils/createDesignerClass";
+import { createDesignerClass } from "./utils/create-designer-class";
 
 // This method is called when your extension is activated
 export function activate(context: vscode.ExtensionContext) {
