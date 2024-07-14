@@ -43,12 +43,12 @@ function getDesignerClassTemplate(
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    ${accessModifier} class ResourceErrorMessages {
+    ${accessModifier} class ${className} {
         
         private static ResourceManager resourceMan;
         private static CultureInfo resourceCulture;
 
-        internal ResourceErrorMessages() {
+        internal ${className}() {
         }
 
         internal static ResourceManager ResourceManager {
@@ -56,7 +56,7 @@ function getDesignerClassTemplate(
                 if (object.ReferenceEquals(resourceMan, null)) {
                     ResourceManager temp = new ResourceManager("${
                       namespace + "." + className
-                    }", typeof(ResourceErrorMessages).Assembly);
+                    }", typeof(${className}).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
